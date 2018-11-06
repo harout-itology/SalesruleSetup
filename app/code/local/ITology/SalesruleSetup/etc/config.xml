@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ITology_SalesruleSetup>
+            <version>0.0.1</version>
+        </ITology_SalesruleSetup>
+    </modules>
+    <global>
+        <helpers>
+            <salesrule_helper>
+                <class>ITology_SalesruleSetup_Helper</class>
+            </salesrule_helper>
+        </helpers>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <promo_quote_edit_tab_main>ITology_SalesruleSetup_Block_Promo_Quote_Edit_Tab_Main</promo_quote_edit_tab_main>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <resources>
+            <salesrule2_setup>
+                <setup>
+                    <module>ITology_SalesruleSetup</module>
+                    <class>Mage_Sales_Model_Resource_Setup</class>
+                </setup>
+            </salesrule2_setup>
+        </resources>
+    </global>
+</config>
